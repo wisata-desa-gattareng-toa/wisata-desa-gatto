@@ -4,15 +4,49 @@ import Navigasi from "../../../../components/navigasi";
 import Footer from "../../../../components/footer";
 
 export default function MassimpolongngePage() {
+  const galeriFotos = [
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/massi/massi1.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/massi/massi2.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/massi/massi3.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/massi/massi4.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/massi/massi5.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/massi/massi6.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/massi/massi7.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/massi/massi8.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/massi/massi9.jpg",
+    },
+  ];
+
   return (
     <>
       <main className="font-sans">
         <Navigasi />
+
         {/* Hero */}
         <section
           id="hero"
           className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: "url('/wisata/mt-massimpolongnge.png')" }}
+          style={{
+            backgroundImage:
+              "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/mt-massimpolongnge.png')",
+          }}
         >
           <div className="bg-opacity-50 px-6 py-4 rounded-lg">
             <h1 className="text-white text-3xl md:text-5xl font-bold text-center justify-center">
@@ -40,20 +74,19 @@ export default function MassimpolongngePage() {
               dan takjub sekaligus.
             </p>
             <p className="pt-3 text-black leading-relaxed text-center">
-              Jalur gunung ini sudah menjadi wisata sejak lama, kemudian sejak 2024,
-              lokasi ini makin teratur berkat mahasiswa KKN Unhas dan pemuda
-              desa—yang dikenal dengan Bolang Bulu Dua—yang memasang penanda
-              jalur serta tugu puncak. Sekarang pendaki bisa sampai dengan lebih
-              mudah dan aman. Massimpolongnge kini bukan hanya soal tantangan,
-              tapi juga pengalaman penuh makna dan pesona alam yang sulit
-              dilupakan.
+              Jalur gunung ini sudah menjadi wisata sejak lama, kemudian sejak
+              2024, lokasi ini makin teratur berkat mahasiswa KKN Unhas dan
+              pemuda desa—yang dikenal dengan Bolang Bulu Dua—yang memasang
+              penanda jalur serta tugu puncak. Sekarang pendaki bisa sampai
+              dengan lebih mudah dan aman. Massimpolongnge kini bukan hanya soal
+              tantangan, tapi juga pengalaman penuh makna dan pesona alam yang
+              sulit dilupakan.
             </p>
           </div>
         </section>
 
         {/* Lokasi & Peta Jalur */}
         <section className="bg-[#F8F9FA] max-w-full mx-auto py-12 px-15 md:px-40 grid md:grid-cols-2 gap-8 items-start">
-          {/* Lokasi */}
           <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
             <h2 className="text-3xl font-bold text-[#4AC2AD] mb-4 text-center">
               LOKASI POS REGIST (BASECAMP)
@@ -69,34 +102,31 @@ export default function MassimpolongngePage() {
             ></iframe>
           </div>
 
-          {/* Peta Jalur */}
           <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
             <h2 className="text-3xl font-bold text-[#4AC2AD] mb-4 text-center">
               PETA JALUR MT. MASSIMPOLONGNGE
             </h2>
             <img
-              src="/laposo/peta-jalur.jpg"
+              src="https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/laposo/peta-jalur.jpg"
               alt="Peta Jalur"
               className="shadow-lg rounded-lg w-full"
             />
           </div>
         </section>
 
-        {/* Lokasi & Peta Jalur */}
+        {/* Jadwal & Peraturan */}
         <section className="bg-white max-w-full mx-auto py-12 px-15 md:px-40 grid md:grid-cols-2 gap-8 items-start">
-          {/* Peta Jalur */}
           <div className="p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
             <h2 className="text-3xl font-bold text-[#01AFEF] mb-4 text-center">
               JADWAL DAN PERATURAN MENDAKI
             </h2>
             <img
-              src="/massi/permas.png"
+              src="https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/massi/permas.png"
               alt="Peraturan"
-              className="shadow-lg rounded-lg w-98"
+              className="shadow-lg rounded-lg w-full"
             />
           </div>
 
-          {/* Lokasi */}
           <div className="p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
             <h2 className="text-3xl font-bold text-[#01AFEF] mb-4 text-center">
               LOKASI MASUK GUNUNG
@@ -122,26 +152,15 @@ export default function MassimpolongngePage() {
             GALERI FOTO MT MASSIMPOLONGNGE
           </h2>
 
-          {/* Array foto dengan src & alt berbeda */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:px-10 md:px-30">
-            {[
-              { src: "/massi/massi1.jpg" },
-              { src: "/massi/massi2.jpg" },
-              { src: "/massi/massi3.jpg" },
-              { src: "/massi/massi4.jpg" },
-              { src: "/massi/massi5.jpg" },
-              { src: "/massi/massi6.jpg" },
-              { src: "/massi/massi7.jpg" },
-              { src: "/massi/massi8.jpg" },
-              { src: "/massi/massi9.jpg" },
-            ].map((foto, i) => (
+            {galeriFotos.map((foto, i) => (
               <Image
                 key={i}
                 src={foto.src}
                 width={400}
                 height={300}
-                className="w-full h-70  object-cover rounded"
-                alt={""}
+                className="w-full h-70 object-cover rounded"
+                alt={`Galeri Massimpolongnge ${i + 1}`}
               />
             ))}
           </div>

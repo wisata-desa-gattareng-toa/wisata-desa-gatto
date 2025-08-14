@@ -4,6 +4,40 @@ import Navigasi from "../../../../components/navigasi";
 import Footer from "../../../../components/footer";
 
 export default function DodolPangiPage() {
+  const hargaItems = [
+    {
+      name: "ISI 6 BIJI",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/pangi/6biji.jpg",
+      price: "Rp 10.000",
+    },
+    {
+      name: "ISI 12 BIJI",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/pangi/12biji.jpg",
+      price: "Rp 20.000",
+    },
+  ];
+
+  const galeriFotos = [
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/pangi/pangi1.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/pangi/pangi2.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/pangi/pangi3.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/pangi/pangi4.png",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/pangi/pangi5.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/pangi/pangi6.jpg",
+    },
+  ];
+
   return (
     <>
       <Navigasi />
@@ -13,7 +47,10 @@ export default function DodolPangiPage() {
         <section
           id="hero"
           className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: "url('/wisata/dodol-pangi.png')" }}
+          style={{
+            backgroundImage:
+              "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/dodol-pangi.png')",
+          }}
         >
           <div className="bg-opacity-50 px-6 py-4 rounded-lg">
             <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
@@ -109,18 +146,7 @@ export default function DodolPangiPage() {
             HARGA
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-10 text-black sm:px-10 md:px-80 justify-center">
-            {[
-              {
-                name: "ISI 6 BIJI",
-                img: "/pangi/6biji.jpg",
-                price: "Rp 10.000",
-              },
-              {
-                name: "ISI 12 BIJI",
-                img: "/pangi/12biji.jpg",
-                price: "Rp 20.000",
-              },
-            ].map((item, i) => (
+            {hargaItems.map((item, i) => (
               <div
                 key={i}
                 className="bg-[#F8F9FA] rounded-lg shadow hover:shadow-lg overflow-hidden text-center flex flex-col"
@@ -135,7 +161,6 @@ export default function DodolPangiPage() {
                 <p className="font-semibold py-3">{item.name}</p>
                 <p className="text-lg font-bold text-[#4AC2AD]">{item.price}</p>
 
-                {/* Tombol Pesan Sekarang */}
                 <a
                   href={`https://wa.me/6285277155118?text=Halo%20saya%20ingin%20pesan%20dodol%20pangi%20${encodeURIComponent(
                     item.name
@@ -160,23 +185,15 @@ export default function DodolPangiPage() {
             GALERI FOTO DODOL PANGI
           </h2>
 
-          {/* Array foto dengan src & alt berbeda */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:px-10 md:px-30">
-            {[
-              { src: "/pangi/pangi1.jpg" },
-              { src: "/pangi/pangi4.png" },
-              { src: "/pangi/pangi5.jpg" },
-              { src: "/pangi/pangi2.jpg" },
-              { src: "/pangi/pangi3.jpg" },
-              { src: "/pangi/pangi6.jpg" },
-            ].map((foto, i) => (
+            {galeriFotos.map((foto, i) => (
               <Image
                 key={i}
                 src={foto.src}
                 width={400}
                 height={300}
-                className="w-full h-48  object-cover rounded"
-                alt={""}
+                className="w-full h-48 object-cover rounded"
+                alt=""
               />
             ))}
           </div>

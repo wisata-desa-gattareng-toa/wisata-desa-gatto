@@ -4,18 +4,43 @@ import Navigasi from "../../../../components/navigasi";
 import Footer from "../../../../components/footer";
 
 export default function AirTerjunLaposoPage() {
+  const galeriFotos = [
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/laposo/laposo4.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/laposo/laposo7.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/laposo/laposo1.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/laposo/laposo2.png",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/laposo/laposo5.png",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/laposo/laposo6.png",
+    },
+  ];
+
   return (
     <>
       <main className="font-sans">
         <Navigasi />
+
         {/* Hero */}
         <section
           id="hero"
           className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: "url('/wisata/air-terjun-laposo.png')" }}
+          style={{
+            backgroundImage:
+              "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/air-terjun-laposo.png')",
+          }}
         >
           <div className="bg-opacity-50 px-6 py-4 rounded-lg">
-            <h1 className="text-white text-3xl md:text-5xl font-bold text-center justify-center">
+            <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
               AIR TERJUN LAPOSO
             </h1>
           </div>
@@ -36,8 +61,8 @@ export default function AirTerjunLaposoPage() {
               ini diberi nama Laposo karena berasal dari gunung Laposo.
             </p>
             <p className="pt-3 text-black leading-relaxed text-center">
-              Selain itu, secara bahasa, nama laposo sendiri diambil dari bahasa
-              bugis yaitu "La Poso" yang artinya sesak nafas. Hal ini
+              Selain itu, secara bahasa, nama Laposo sendiri diambil dari bahasa
+              Bugis yaitu "La Poso" yang artinya sesak nafas. Hal ini
               dikarenakan, untuk mencapai air terjun tersebut anda akan
               dihadapkan oleh medan penuh rintangan yang membuat sesak nafas.
               Namun hal itu akan terbayar dengan keindahan air terjun dengan dua
@@ -70,8 +95,8 @@ export default function AirTerjunLaposoPage() {
           </h2>
           <div className="flex justify-center">
             <img
-              src="/laposo/peta-jalur.jpg"
-              alt="Peta Administratif"
+              src="https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/laposo/peta-jalur.jpg"
+              alt="Peta Jalur"
               className="shadow-lg rounded-lg max-w-2xl w-full"
             />
           </div>
@@ -83,23 +108,15 @@ export default function AirTerjunLaposoPage() {
             GALERI FOTO AIR TERJUN LAPOSO
           </h2>
 
-          {/* Array foto dengan src & alt berbeda */}
           <div className="grid grid-cols-3 md:grid-cols-3 gap-4 sm:px-10 md:px-80">
-            {[
-              { src: "/laposo/laposo4.jpg" },
-              { src: "/laposo/laposo7.jpg" },
-              { src: "/laposo/laposo1.jpg" },
-              { src: "/laposo/laposo2.png" },
-              { src: "/laposo/laposo5.png" },
-              { src: "/laposo/laposo6.png" },
-            ].map((foto, i) => (
+            {galeriFotos.map((foto, i) => (
               <Image
                 key={i}
                 src={foto.src}
                 width={400}
                 height={300}
                 className="w-50 h-80 object-cover rounded"
-                alt={""}
+                alt=""
               />
             ))}
           </div>

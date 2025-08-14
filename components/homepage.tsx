@@ -5,65 +5,68 @@ import { useRouter } from "next/navigation";
 export default function HomePage() {
   const router = useRouter();
 
+  const baseURL =
+    "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public";
+
   const slides = [
     {
-      image: "/hero.png",
+      image: `${baseURL}/hero.png`,
       title: "SELAMAT DATANG DI",
       subtitle: "WISATA DESA GATTARENG TOA",
       button: "Jelajahi Wisata",
-      link: "/wisata", // arahkan ke halaman wisata utama
+      link: "/wisata",
     },
     {
-      image: "/banga/hero.png",
+      image: `${baseURL}/banga/hero.png`,
       title: "PERMANDIAN ALAM",
       subtitle: "BANGA",
       button: "Lihat Detail Wisata",
       link: "/wisata/permandian-banga",
     },
     {
-      image: "/wisata/permandian-lereng.png",
-      title: "PERMANDIANG LERENG HIAJU",
+      image: `${baseURL}/wisata/permandian-lereng.png`,
+      title: "PERMANDIAN LERENG HIJAU",
       subtitle: "BULU DUA",
       button: "Lihat Detail Wisata",
       link: "/wisata/permandian-lereng",
     },
     {
-      image: "/wisata/lembah-laparajo.png",
+      image: `${baseURL}/wisata/lembah-laparajo.png`,
       title: "LEMBAH LAPARAJO",
       subtitle: "",
       button: "Lihat Detail Wisata",
       link: "/wisata/lembah-laparajo",
     },
     {
-      image: "/wisata/mt-bulu-dua.png",
+      image: `${baseURL}/wisata/mt-bulu-dua.png`,
       title: "MT BULU DUA",
       subtitle: "",
       button: "Lihat Detail Wisata",
       link: "/wisata/mt-bulu-dua",
     },
     {
-      image: "/wisata/mt-massimpolongnge.png",
+      image: `${baseURL}/wisata/mt-massimpolongnge.png`,
       title: "MT MASSIMPOLONGNGE",
       subtitle: "",
       button: "Lihat Detail Wisata",
       link: "/wisata/mt-massimpolongnge",
     },
     {
-      image: "/wisata/air-terjun-laposo.png",
+      image: `${baseURL}/wisata/air-terjun-laposo.png`,
       title: "AIR TERJUN LAPOSO",
       subtitle: "",
       button: "Lihat Detail Wisata",
       link: "/wisata/air-terjun-laposo",
     },
     {
-      image: "/wisata/bolu-susu.png",
+      image: `${baseURL}/wisata/bolu-susu.png`,
       title: "BOLU SUSU",
       subtitle: "",
       button: "Lihat Detail Wisata",
       link: "/wisata/bolu-susu",
     },
     {
-      image: "/wisata/dodol-pangi.png",
+      image: `${baseURL}/wisata/dodol-pangi.png`,
       title: "DODOL PANGI",
       subtitle: "",
       button: "Lihat Detail Wisata",
@@ -73,13 +76,9 @@ export default function HomePage() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
+  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
+  const prevSlide = () =>
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
 
   return (
     <main className="mt-16">
@@ -102,15 +101,12 @@ export default function HomePage() {
           </button>
         </div>
 
-        {/* Panah kiri */}
         <button
           onClick={prevSlide}
           className="absolute left-4 text-white text-3xl bg-black bg-opacity-40 rounded-full px-3 py-1 hover:bg-opacity-60"
         >
           ‹
         </button>
-
-        {/* Panah kanan */}
         <button
           onClick={nextSlide}
           className="absolute right-4 text-white text-3xl bg-black bg-opacity-40 rounded-full px-3 py-1 hover:bg-opacity-60"
@@ -126,30 +122,16 @@ export default function HomePage() {
         </h2>
         <div className="flex justify-center">
           <img
-            src="/desa.jpg"
+            src={`${baseURL}/desa.jpg`}
             alt="Desa Gattareng Toa"
             className="rounded-lg shadow-lg w-120 max-w-xl mb-6"
           />
         </div>
         <p className="text-black max-w-3xl mx-auto text-center mb-4">
-          Desa Gattareng Toa adalah salah satu desa yang ada di kecamatan
-          Marioriwawo, Kabupaten Soppeng, dimana desa ini bertempat di
-          perbatasan Soppeng dan Barru tepatnya dijalan poros bulu dua. Desa ini
-          pada awalnya bagian dari Desa Gattareng namun semakin berkembangnya
-          desa ini maka dengan keluarnya Keputusan Bupati Soppeng Nomor
-          34/VI/2003 tanggal 11 Juni 2003 tentang Pembentuka Dua Desa Persiapan
-          Dalam Wilayah Kecamatan Marioriwawo dan Kecamatan Liliriaja Kabupaten
-          Soppeng maka Desa Gattareng dipecah menjadi dua desa dimana satu desa
-          tetap memakai nama Gattareng sedangkan desa yang baru menggunakan nama
-          Gattareng Toa.
+          Desa Gattareng Toa adalah salah satu desa ...
         </p>
         <p className="text-black max-w-3xl mx-auto text-center">
-          Penyebab desa baru yang menggunakan nama Gattareng Toa adalah karena
-          berdasarkan penulusuran sejarah ternyata di wilayah desa Gattareng Toa
-          terdapat pemukiman tertua tepatnya diwilayah perbukitan disisi barat
-          desa yang hampir berbatasan dengan Kabupaten Barru. Oleh karena itu,
-          desa ini disebut desa Gattareng Toa dimana dalam bahasa bugis "Toa"
-          artinya tua.
+          Penyebab desa baru yang menggunakan nama Gattareng Toa adalah ...
         </p>
       </section>
 
@@ -160,7 +142,7 @@ export default function HomePage() {
         </h2>
         <div className="flex justify-center">
           <img
-            src="/petaadmin.jpg"
+            src={`${baseURL}/petaadmin.jpg`}
             alt="Peta Administratif"
             className="shadow-lg rounded-lg max-w-2xl w-full"
           />

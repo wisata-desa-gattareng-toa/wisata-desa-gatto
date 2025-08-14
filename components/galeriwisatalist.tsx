@@ -9,58 +9,64 @@ type WisataItem = {
 };
 
 export default function GaleriWisataList() {
+  const baseURL =
+    "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public";
+
   const wisataAlam: WisataItem[] = [
     {
       id: "permandian-banga",
       nama: "Permandian Banga",
-      gambar: "/wisata/permandian-banga.jpg",
+      gambar: `${baseURL}/wisata/permandian-banga.jpg`,
     },
     {
       id: "permandian-lereng",
       nama: "Permandian Lereng Hijau",
-      gambar: "/wisata/permandian-lereng.jpg",
+      gambar: `${baseURL}/wisata/permandian-lereng.jpg`,
     },
     {
       id: "air-terjun-laposo",
       nama: "Air Terjun Laposo",
-      gambar: "/wisata/air-terjun-laposo.png",
+      gambar: `${baseURL}/wisata/air-terjun-laposo.png`,
     },
     {
       id: "lembah-laparajo",
       nama: "Lembah Laparaojo",
-      gambar: "/wisata/lembah-laparajo.jpg",
+      gambar: `${baseURL}/wisata/lembah-laparajo.jpg`,
     },
     {
       id: "mt-massimpolongnge",
       nama: "MT. Massimpolongnge",
-      gambar: "/wisata/mt-massimpolongnge.jpg",
+      gambar: `${baseURL}/wisata/mt-massimpolongnge.jpg`,
     },
     {
       id: "mt-bulu-dua",
       nama: "MT. Bulu Dua",
-      gambar: "/wisata/mt-bulu-dua.jpg",
+      gambar: `${baseURL}/wisata/mt-bulu-dua.jpg`,
     },
   ];
 
   const wisataKuliner: WisataItem[] = [
-    { id: "bolu-susu", nama: "Bolu Susu", gambar: "/wisata/bolu-susu.jpeg" },
+    {
+      id: "bolu-susu",
+      nama: "Bolu Susu",
+      gambar: `${baseURL}/wisata/bolu-susu.jpeg`,
+    },
     {
       id: "dodol-pangi",
       nama: "Dodol Pangi",
-      gambar: "/wisata/dodol-pangi.jpg",
+      gambar: `${baseURL}/wisata/dodol-pangi.jpg`,
     },
   ];
 
   return (
     <>
-      {/* Navigasi */}
       <Navigasi />
 
       {/* HERO */}
       <section
         id="hero"
         className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/hero.png')" }}
+        style={{ backgroundImage: `url(${baseURL}/hero.png)` }}
       >
         <div className="bg-opacity-50 px-6 py-4 rounded-lg">
           <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
@@ -113,7 +119,6 @@ export default function GaleriWisataList() {
         </div>
       </section>
 
-      {/* Footer */}
       <Footer />
     </>
   );

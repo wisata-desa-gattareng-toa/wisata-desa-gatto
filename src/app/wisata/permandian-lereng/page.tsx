@@ -4,16 +4,66 @@ import Navigasi from "../../../../components/navigasi";
 import Footer from "../../../../components/footer";
 
 export default function LerengHijauPage() {
+  const fasilitas = [
+    {
+      name: "Tempat Parkir",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/parkir.png",
+    },
+    {
+      name: "Kamar Mandi",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/toilet.png",
+    },
+    {
+      name: "Gazebo",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/gazebo.png",
+    },
+    {
+      name: "Tempat Duduk",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/tempat-duduk.png",
+    },
+    {
+      name: "Warung",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/warung.png",
+    },
+    {
+      name: "Wahana",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/wahana.png",
+    },
+  ];
+
+  const galeriFotos = [
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/permandian-lereng.png",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/lehi1.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/lehi2.png",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/lehi3.png",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/lehi4.png",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/lehi5.png",
+    },
+  ];
+
   return (
     <>
       <Navigasi />
-
       <main className="font-sans">
         {/* Hero */}
         <section
           id="hero"
           className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: "url('/wisata/permandian-lereng.png')" }}
+          style={{
+            backgroundImage:
+              "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/permandian-lereng.png')",
+          }}
         >
           <div className="bg-opacity-50 px-6 py-4 rounded-lg">
             <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
@@ -26,32 +76,19 @@ export default function LerengHijauPage() {
 
         {/* Deskripsi & Lokasi */}
         <section className="bg-white max-w-full mx-auto py-12 px-15 md:px-40 grid md:grid-cols-2 gap-8 items-center">
-          {/* Deskripsi */}
           <div className="text-center bg-[#4AC2AD1F] py-10 px-15 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
             <h2 className="text-3xl font-bold text-[#01AFEF] mb-4">
               DESKRIPSI
             </h2>
             <p className="text-black leading-relaxed text-center">
               Permandian Lereng Hijau, yang terletak di lereng Bukit Bulu Dua,
-              Desa Gattareng Toa, Kecamatan Marioriwawo, Kabupaten Soppeng,
-              adalah surga alam yang masih terjaga keasriannya. Terletak sangat
-              strategis di tepi jalan raya, kolam alami ini mudah diakses dan
-              menyajikan pemandangan luar biasa: kombinasi gunung, hutan, kebun,
-              sawah, dan air terjun yang memanjakan mata dan hati. Selain itu
-              pengunjung juga akan merasakan sejuknya udara di lokasi permandian
-              karna dibangun disekitar lereng hijau Lembah Bulu Dua, Soppeng
-              yang juga berbatasan dengan Kabupaten Barru.
+              Desa Gattareng Toa...
             </p>
             <p className="pt-3 text-black leading-relaxed text-center">
-              Awalnya kawasan ini merupakan kolam ikan dan lahan ternak. Namun,
-              berkat inisiatif tiga bersaudara asal Soppeng yang ingin berbagi
-              keindahan kampung halaman, mereka mengubahnya menjadi kolam renang
-              alami. Kini, kolam ini menyuguhkan air pegunungan yang jernih dan
-              sejuk.
+              Awalnya kawasan ini merupakan kolam ikan dan lahan ternak...
             </p>
           </div>
 
-          {/* Lokasi */}
           <div className="bg-[#F8F9FA] p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
             <h2 className="text-3xl font-bold text-[#4AC2AD] mb-4">LOKASI</h2>
             <iframe
@@ -72,9 +109,11 @@ export default function LerengHijauPage() {
             JAM OPERASIONAL DAN KARCIS
           </h2>
           <div className="flex justify-center">
-            <img
-              src="/lehi/lereng.png"
+            <Image
+              src="https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lehi/lereng.png"
               alt="jam operasional dan karcis"
+              width={800}
+              height={400}
               className="shadow-lg rounded-lg max-w-2xl w-140"
             />
           </div>
@@ -86,20 +125,10 @@ export default function LerengHijauPage() {
             FASILITAS
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-10 text-black sm:px-10 md:px-30">
-            {[
-              { name: "Tempat Parkir", img: "/lehi/parkir.png" },
-              { name: "Kamar Mandi", img: "/lehi/toilet.png" },
-              { name: "Gazebo", img: "/lehi/gazebo.png" },
-              {
-                name: "Tempat Duduk",
-                img: "/lehi/tempat-duduk.png",
-              },
-              { name: "Warung", img: "/lehi/warung.png" },
-              { name: "Wahan", img: "/lehi/wahana.png" },
-            ].map((item, i) => (
+            {fasilitas.map((item, i) => (
               <div
                 key={i}
-                className=" bg-[#F8F9FA] rounded-lg shadow hover:shadow-lg overflow-hidden text-center"
+                className="bg-[#F8F9FA] rounded-lg shadow hover:shadow-lg overflow-hidden text-center"
               >
                 <Image
                   src={item.img}
@@ -122,24 +151,15 @@ export default function LerengHijauPage() {
           <h2 className="text-3xl font-bold text-[#4AC2AD] text-center mb-8">
             GALERI FOTO PERMANDIAN LERENG HIJAU
           </h2>
-
-          {/* Array foto dengan src & alt berbeda */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:px-10 md:px-30">
-            {[
-              { src: "/wisata/permandian-lereng.jpg" },
-              { src: "/lehi/lehi1.jpg" },
-              { src: "/lehi/lehi2.png" },
-              { src: "/lehi/lehi3.png" },
-              { src: "/lehi/lehi4.png" },
-              { src: "/lehi/lehi5.png" },
-            ].map((foto, i) => (
+            {galeriFotos.map((foto, i) => (
               <Image
                 key={i}
                 src={foto.src}
                 width={400}
                 height={300}
                 className="w-full h-48 object-cover rounded"
-                alt={""}
+                alt={`Galeri Lereng Hijau ${i + 1}`}
               />
             ))}
           </div>

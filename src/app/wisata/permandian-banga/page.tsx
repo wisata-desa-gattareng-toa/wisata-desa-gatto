@@ -4,16 +4,66 @@ import Navigasi from "../../../../components/navigasi";
 import Footer from "../../../../components/footer";
 
 export default function PermandianBangaPage() {
+  const fasilitas = [
+    {
+      name: "Tempat Parkir",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/parkir.jpg",
+    },
+    {
+      name: "Kamar Mandi",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/kamar-mandi.jpg",
+    },
+    {
+      name: "Gazebo",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/gazebo.jpg",
+    },
+    {
+      name: "Tempat Duduk",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/tempat-duduk.jpg",
+    },
+    {
+      name: "Warung",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/warung.jpg",
+    },
+    {
+      name: "Spot Foto",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/spot-foto.jpg",
+    },
+  ];
+
+  const galeriFotos = [
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/banga5.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/banga1.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/banga2.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/banga3.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/banga4.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/banga6.jpg",
+    },
+  ];
+
   return (
     <>
       <Navigasi />
-
       <main className="font-sans">
         {/* Hero */}
         <section
           id="hero"
           className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: "url('/banga/hero.png')" }}
+          style={{
+            backgroundImage:
+              "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/hero.png')",
+          }}
         >
           <div className="bg-opacity-50 px-6 py-4 rounded-lg">
             <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
@@ -26,7 +76,6 @@ export default function PermandianBangaPage() {
 
         {/* Deskripsi & Lokasi */}
         <section className="bg-white max-w-full mx-auto py-12 px-15 md:px-40 grid md:grid-cols-2 gap-8 items-center">
-          {/* Deskripsi */}
           <div className="text-center bg-[#4AC2AD1F] py-10 px-15 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
             <h2 className="text-3xl font-bold text-[#01AFEF] mb-4">
               DESKRIPSI
@@ -42,7 +91,6 @@ export default function PermandianBangaPage() {
             </p>
           </div>
 
-          {/* Lokasi */}
           <div className="bg-[#F8F9FA] p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
             <h2 className="text-3xl font-bold text-[#4AC2AD] mb-4">LOKASI</h2>
             <iframe
@@ -65,31 +113,16 @@ export default function PermandianBangaPage() {
           <div className="bg-[#01afef1c] px-15 py-10 rounded-lg text-center text-black">
             <p className="mb-4">
               Banga (Pigatetta elata) adalah sejenis palma yang tinggi dan indah
-              yang tumbuh dan tersebar di wilayah Desa Gattareng Toa. Batang
-              yang licin dan lurus digunakan dibuat sebagai bakul sebagal tempat
-              barang dan bahkan tikar para orang tua dulu. Tumbuhan ini tumbuh
-              di sekitar sumber mata air diperbatasan Kampung Kassi-Gattareng
-              Yang kemudian pada perkembangan nya nama pahon ini di ambil
-              sebagal nama tempat yaltu Banga. Kampung ini terdapat sumber mata
-              air yang luar blasa yang alrnya begitu besar dan menjadi sumber
-              air minum dan pengairan. Setelah Desa Gattareng dilakukan
-              pemecahan menjadi dua Desa dan lahirlah Desa Gattareng Toa.
+              yang tumbuh dan tersebar di wilayah Desa Gattareng Toa...
             </p>
             <p className="mb-4">
               Setelah melihat potensi air ini kepala Desa pertama Desa Gattareng
-              Toa Bapak Ibrahim S.E.M.M (2003-2008) membangun sebuah kolam yang
-              bisa di dialihfungsikan menjadi pemandian untuk bagi masyarakat
-              sekitar maupun luar yang kemudian diberi nama "Pemandian Alam
-              Banga” yang didirikan pada tahun 2005.
+              Toa Bapak Ibrahim S.E.M.M (2003-2008) membangun sebuah kolam...
             </p>
             <p>
               Kemudian, pada tahun 2025, permandian ini semakin ramai dikunjungi
               sejak mendapatkan sentuhan perbaikan dan penataan dari para
-              mahasiswa KKN-T MBKM Universitas Lamappapoleonro (Unipol) dengan
-              bantuan warga sekitar. Mereka melakukan pengecatan ulang,
-              memperbaiki fasilitas yang rusak, serta memperindah area
-              permandian sehingga tampil lebih menarik dan nyaman bagi
-              pengunjung.
+              mahasiswa KKN-T MBKM Universitas Lamappapoleonro (Unipol)...
             </p>
           </div>
         </section>
@@ -100,9 +133,11 @@ export default function PermandianBangaPage() {
             JAM OPERASIONAL DAN KARCIS
           </h2>
           <div className="flex justify-center">
-            <img
-              src="/banga/banga.png"
+            <Image
+              src="https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/banga/banga.png"
               alt="jam operasional dan karcis"
+              width={800}
+              height={400}
               className="shadow-lg rounded-lg max-w-2xl w-140"
             />
           </div>
@@ -114,20 +149,10 @@ export default function PermandianBangaPage() {
             FASILITAS
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-10 text-black sm:px-10 md:px-30">
-            {[
-              { name: "Tempat Parkir", img: "/banga/parkir.jpg" },
-              { name: "Kamar Mandi", img: "/banga/kamar-mandi.jpg" },
-              { name: "Gazebo", img: "/banga/gazebo.jpg" },
-              {
-                name: "Tempat Duduk",
-                img: "/banga/tempat-duduk.jpg",
-              },
-              { name: "Warung", img: "/banga/warung.jpg" },
-              { name: "Spot Foto", img: "/banga/spot-foto.jpg" },
-            ].map((item, i) => (
+            {fasilitas.map((item, i) => (
               <div
                 key={i}
-                className=" bg-[#F8F9FA] rounded-lg shadow hover:shadow-lg overflow-hidden text-center"
+                className="bg-[#F8F9FA] rounded-lg shadow hover:shadow-lg overflow-hidden text-center"
               >
                 <Image
                   src={item.img}
@@ -147,24 +172,15 @@ export default function PermandianBangaPage() {
           <h2 className="text-3xl font-bold text-[#4AC2AD] text-center mb-8">
             GALERI FOTO BANGA
           </h2>
-
-          {/* Array foto dengan src & alt berbeda */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:px-10 md:px-30">
-            {[
-              { src: "/banga/banga5.jpg" },
-              { src: "/banga/banga1.jpg" },
-              { src: "/banga/banga2.jpg" },
-              { src: "/banga/banga3.jpg" },
-              { src: "/banga/banga4.jpg" },
-              { src: "/banga/banga6.jpg" },
-            ].map((foto, i) => (
+            {galeriFotos.map((foto, i) => (
               <Image
                 key={i}
                 src={foto.src}
                 width={400}
                 height={300}
                 className="w-full h-48 object-cover rounded"
-                alt={""}
+                alt={`Galeri Banga ${i + 1}`}
               />
             ))}
           </div>

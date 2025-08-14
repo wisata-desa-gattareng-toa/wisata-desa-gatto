@@ -4,15 +4,58 @@ import Navigasi from "../../../../components/navigasi";
 import Footer from "../../../../components/footer";
 
 export default function BuluDuaPage() {
+  const galeriFotos = [
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/mt-bulu-dua.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldua1.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldua2.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldua4.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldua5.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldua6.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldua7.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldu14.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldua10.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldua11.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldu12.png",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/buldu13.png",
+    },
+  ];
+
   return (
     <>
       <main className="font-sans">
         <Navigasi />
+
         {/* Hero */}
         <section
           id="hero"
           className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: "url('/wisata/mt-massimpolongnge.png')" }}
+          style={{
+            backgroundImage:
+              "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/mt-massimpolongnge.png')",
+          }}
         >
           <div className="bg-opacity-50 px-6 py-4 rounded-lg">
             <h1 className="text-white text-3xl md:text-5xl font-bold text-center justify-center">
@@ -54,12 +97,11 @@ export default function BuluDuaPage() {
             <p className="pt-3 text-black leading-relaxed text-center">
               Jalur melalui Soppeng ini dibuka secara resmi sejak tahun 2025
               setelah dilakukan pembukaan jalur oleh mahasiswa KKN Gel. 114
-              Unhas bersama pemuda desa yaitu Bolang Bulu Dua,
-              dengan pemasangan penanda jalur, titik istirahat, dan papan
-              informasi. Kini pendakian ke Bulu Dua menjadi lebih mudah, aman,
-              dan menyenangkan. Bulu Dua bukan hanya sekadar destinasi, tetapi
-              juga simbol keindahan dan kekuatan alam Soppeng yang layak dijaga
-              bersama.
+              Unhas bersama pemuda desa yaitu Bolang Bulu Dua, dengan pemasangan
+              penanda jalur, titik istirahat, dan papan informasi. Kini
+              pendakian ke Bulu Dua menjadi lebih mudah, aman, dan menyenangkan.
+              Bulu Dua bukan hanya sekadar destinasi, tetapi juga simbol
+              keindahan dan kekuatan alam Soppeng yang layak dijaga bersama.
             </p>
           </div>
         </section>
@@ -90,28 +132,28 @@ export default function BuluDuaPage() {
               MT. BULU DUA
             </h2>
             <img
-              src="/buldu/peta-buldu.jpg"
+              src="https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/peta-buldu.jpg"
               alt="Peta Jalur"
               className="shadow-lg rounded-lg w-full"
             />
           </div>
         </section>
 
-        {/* Lokasi & Peta Jalur */}
+        {/* Jadwal & Peraturan */}
         <section className="bg-white max-w-full mx-auto py-12 px-15 md:px-40 grid md:grid-cols-2 gap-8 items-start">
-          {/* Peta Jalur */}
+          {/* Jadwal */}
           <div className="p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
             <h2 className="text-3xl font-bold text-[#01AFEF] mb-4 text-center">
               JADWAL DAN PERATURAN MENDAKI
             </h2>
             <img
-              src="/buldu/perbul.png"
+              src="https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/buldu/perbul.png"
               alt="Peraturan"
-              className="shadow-lg rounded-lg w-98"
+              className="shadow-lg rounded-lg w-full"
             />
           </div>
 
-          {/* Lokasi */}
+          {/* Lokasi Masuk */}
           <div className="p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
             <h2 className="text-3xl font-bold text-[#01AFEF] mb-4 text-center">
               LOKASI MASUK GUNUNG
@@ -137,33 +179,20 @@ export default function BuluDuaPage() {
             GALERI FOTO MT BULU DUA
           </h2>
 
-          {/* Array foto dengan src & alt berbeda */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:px-10 md:px-30">
-            {[
-              { src: "/wisata/mt-bulu-dua.jpg" },
-              { src: "/buldu/buldua1.jpg" },
-              { src: "/buldu/buldua2.jpg" },
-              { src: "/buldu/buldua4.jpg" },
-              { src: "/buldu/buldua5.jpg" },
-              { src: "/buldu/buldua6.jpg" },
-              { src: "/buldu/buldua7.jpg" },
-              { src: "/buldu/buldu14.jpg" },
-              { src: "/buldu/buldua10.jpg" },
-              { src: "/buldu/buldua11.jpg" },
-              { src: "/buldu/buldu12.png" },
-              { src: "/buldu/buldu13.png" },
-            ].map((foto, i) => (
+            {galeriFotos.map((foto, i) => (
               <Image
                 key={i}
                 src={foto.src}
                 width={400}
                 height={300}
-                className="w-full h-70  object-cover rounded"
-                alt={""}
+                className="w-full h-70 object-cover rounded"
+                alt=""
               />
             ))}
           </div>
         </section>
+
         <Footer />
       </main>
     </>

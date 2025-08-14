@@ -4,6 +4,31 @@ import Navigasi from "../../../../components/navigasi";
 import Footer from "../../../../components/footer";
 
 export default function BoluSusuPage() {
+  const hargaItems = [
+    {
+      name: "ISI 12 BIJI",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/bolsu/12pcs.jpg",
+      price: "-",
+    },
+    {
+      name: "ISI 20 BIJI",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/bolsu/20pcs.jpg",
+      price: "-",
+    },
+  ];
+
+  const galeriFotos = [
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/bolu-susu.jpeg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/bolsu/bolsu1.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/bolsu/bolsu2.jpg",
+    },
+  ];
+
   return (
     <>
       <Navigasi />
@@ -13,7 +38,10 @@ export default function BoluSusuPage() {
         <section
           id="hero"
           className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: "url('/wisata/bolu-susu.png')" }}
+          style={{
+            backgroundImage:
+              "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/bolu-susu.png')",
+          }}
         >
           <div className="bg-opacity-50 px-6 py-4 rounded-lg">
             <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
@@ -74,18 +102,7 @@ export default function BoluSusuPage() {
             HARGA
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-10 text-black sm:px-10 md:px-80 justify-center">
-            {[
-              {
-                name: "ISI 12 BIJI",
-                img: "/bolsu/12pcs.jpg",
-                price: "-",
-              },
-              {
-                name: "ISI 20 BIJI",
-                img: "/bolsu/20pcs.jpg",
-                price: "-",
-              },
-            ].map((item, i) => (
+            {hargaItems.map((item, i) => (
               <div
                 key={i}
                 className="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden text-center flex flex-col"
@@ -122,20 +139,15 @@ export default function BoluSusuPage() {
             GALERI FOTO BOLU SUSU
           </h2>
 
-          {/* Array foto dengan src & alt berbeda */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:px-10 md:px-30">
-            {[
-              { src: "/wisata/bolu-susu.jpeg" },
-              { src: "/bolsu/bolsu1.jpg" },
-              { src: "/bolsu/bolsu2.jpg" },
-            ].map((foto, i) => (
+            {galeriFotos.map((foto, i) => (
               <Image
                 key={i}
                 src={foto.src}
                 width={400}
                 height={300}
-                className="w-full h-70  object-cover rounded"
-                alt={""}
+                className="w-full h-70 object-cover rounded"
+                alt=""
               />
             ))}
           </div>

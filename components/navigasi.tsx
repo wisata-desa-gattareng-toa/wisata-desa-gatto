@@ -9,6 +9,9 @@ export default function Navigasi() {
   const [activeSection, setActiveSection] = useState("hero");
   const pathname = usePathname();
 
+  const logoLFS =
+    "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/logo.png";
+
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
     const observer = new IntersectionObserver(
@@ -35,7 +38,7 @@ export default function Navigasi() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Link href="/">
-              <img src="/logo.png" alt="Logo" className="h-15 cursor-pointer" />
+              <img src={logoLFS} alt="Logo" className="h-15 cursor-pointer" />
             </Link>
           </div>
 
