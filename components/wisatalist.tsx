@@ -49,7 +49,7 @@ export default function WisataList() {
     {
       id: "bolu-susu",
       nama: "Bolu Susu",
-      gambar: `${baseURL}/wisata/bolu-susu.jpeg`,
+      gambar: `/wisata/bolu-susu.jpeg`,
     },
     {
       id: "dodol-pangi",

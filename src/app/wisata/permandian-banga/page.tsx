@@ -113,16 +113,31 @@ export default function PermandianBangaPage() {
           <div className="bg-[#01afef1c] px-15 py-10 rounded-lg text-center text-black">
             <p className="mb-4">
               Banga (Pigatetta elata) adalah sejenis palma yang tinggi dan indah
-              yang tumbuh dan tersebar di wilayah Desa Gattareng Toa...
+              yang tumbuh dan tersebar di wilayah Desa Gattareng Toa. Batang
+              yang licin dan lurus digunakan dibuat sebagai bakul sebagal tempat
+              barang dan bahkan tikar para orang tua dulu. Tumbuhan ini tumbuh
+              di sekitar sumber mata air diperbatasan Kampung Kassi-Gattareng
+              Yang kemudian pada perkembangan nya nama pahon ini di ambil
+              sebagal nama tempat yaltu Banga. Kampung ini terdapat sumber mata
+              air yang luar blasa yang alrnya begitu besar dan menjadi sumber
+              air minum dan pengairan. Setelah Desa Gattareng dilakukan
+              pemecahan menjadi dua Desa dan lahirlah Desa Gattareng Toa.
             </p>
             <p className="mb-4">
               Setelah melihat potensi air ini kepala Desa pertama Desa Gattareng
-              Toa Bapak Ibrahim S.E.M.M (2003-2008) membangun sebuah kolam...
+              Toa Bapak Ibrahim S.E.M.M (2003-2008) membangun sebuah kolam yang
+              bisa di dialihfungsikan menjadi pemandian untuk bagi masyarakat
+              sekitar maupun luar yang kemudian diberi nama "Pemandian Alam
+              Banga” yang didirikan pada tahun 2005.
             </p>
             <p>
               Kemudian, pada tahun 2025, permandian ini semakin ramai dikunjungi
               sejak mendapatkan sentuhan perbaikan dan penataan dari para
-              mahasiswa KKN-T MBKM Universitas Lamappapoleonro (Unipol)...
+              mahasiswa KKN-T MBKM Universitas Lamappapoleonro (Unipol) dengan
+              bantuan warga sekitar. Mereka melakukan pengecatan ulang,
+              memperbaiki fasilitas yang rusak, serta memperindah area
+              permandian sehingga tampil lebih menarik dan nyaman bagi
+              pengunjung.
             </p>
           </div>
         </section>

@@ -128,10 +128,24 @@ export default function HomePage() {
           />
         </div>
         <p className="text-black max-w-3xl mx-auto text-center mb-4">
-          Desa Gattareng Toa adalah salah satu desa ...
+          Desa Gattareng Toa adalah salah satu desa yang ada di kecamatan
+          Marioriwawo, Kabupaten Soppeng, dimana desa ini bertempat di
+          perbatasan Soppeng dan Barru tepatnya dijalan poros bulu dua. Desa ini
+          pada awalnya bagian dari Desa Gattareng namun semakin berkembangnya
+          desa ini maka dengan keluarnya Keputusan Bupati Soppeng Nomor
+          34/VI/2003 tanggal 11 Juni 2003 tentang Pembentuka Dua Desa Persiapan
+          Dalam Wilayah Kecamatan Marioriwawo dan Kecamatan Liliriaja Kabupaten
+          Soppeng maka Desa Gattareng dipecah menjadi dua desa dimana satu desa
+          tetap memakai nama Gattareng sedangkan desa yang baru menggunakan nama
+          Gattareng Toa.
         </p>
         <p className="text-black max-w-3xl mx-auto text-center">
-          Penyebab desa baru yang menggunakan nama Gattareng Toa adalah ...
+          Penyebab desa baru yang menggunakan nama Gattareng Toa adalah karena
+          berdasarkan penulusuran sejarah ternyata di wilayah desa Gattareng Toa
+          terdapat pemukiman tertua tepatnya diwilayah perbukitan disisi barat
+          desa yang hampir berbatasan dengan Kabupaten Barru. Oleh karena itu,
+          desa ini disebut desa Gattareng Toa dimana dalam bahasa bugis "Toa"
+          artinya tua.
         </p>
       </section>
 

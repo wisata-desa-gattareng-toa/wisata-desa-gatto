@@ -19,7 +19,7 @@ export default function BoluSusuPage() {
 
   const galeriFotos = [
     {
-      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/bolu-susu.jpeg",
+      src: "/wisata/bolu-susu.jpeg",
     },
     {
       src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/bolsu/bolsu1.jpg",

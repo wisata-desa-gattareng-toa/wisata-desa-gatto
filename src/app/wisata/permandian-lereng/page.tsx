@@ -82,10 +82,21 @@ export default function LerengHijauPage() {
             </h2>
             <p className="text-black leading-relaxed text-center">
               Permandian Lereng Hijau, yang terletak di lereng Bukit Bulu Dua,
-              Desa Gattareng Toa...
+              Desa Gattareng Toa, Kecamatan Marioriwawo, Kabupaten Soppeng,
+              adalah surga alam yang masih terjaga keasriannya. Terletak sangat
+              strategis di tepi jalan raya, kolam alami ini mudah diakses dan
+              menyajikan pemandangan luar biasa: kombinasi gunung, hutan, kebun,
+              sawah, dan air terjun yang memanjakan mata dan hati. Selain itu
+              pengunjung juga akan merasakan sejuknya udara di lokasi permandian
+              karna dibangun disekitar lereng hijau Lembah Bulu Dua, Soppeng
+              yang juga berbatasan dengan Kabupaten Barru.
             </p>
             <p className="pt-3 text-black leading-relaxed text-center">
-              Awalnya kawasan ini merupakan kolam ikan dan lahan ternak...
+              Awalnya kawasan ini merupakan kolam ikan dan lahan ternak. Namun,
+              berkat inisiatif tiga bersaudara asal Soppeng yang ingin berbagi
+              keindahan kampung halaman, mereka mengubahnya menjadi kolam renang
+              alami. Kini, kolam ini menyuguhkan air pegunungan yang jernih dan
+              sejuk.
             </p>
           </div>
 
