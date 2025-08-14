@@ -4,32 +4,54 @@ import Navigasi from "../../../../components/navigasi";
 import Footer from "../../../../components/footer";
 
 export default function LembahLaparajoPage() {
-  // URL raw LFS / GitHub
+  // Semua link gambar besar pakai GitHub LFS / media.githubusercontent.com
   const galeriFotos = [
     {
-      src: "https://github.com/username/repo/raw/main/wisata/lembah-laparajo.jpg",
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/lembah-laparajo.jpg",
     },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar1.jpg" },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar2.jpg" },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar3.jpg" },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar4.jpg" },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar12.jpg" },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar6.jpg" },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar7.jpg" },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar8.jpg" },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar9.jpg" },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar10.jpg" },
-    { src: "https://github.com/username/repo/raw/main/lapa/lapar5.png" },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar1.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar2.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar3.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar4.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar12.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar6.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar7.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar8.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar9.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar10.jpg",
+    },
+    {
+      src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/lapar5.png",
+    },
   ];
 
   const fasilitas = [
     {
       name: "Tempat Duduk",
-      img: "https://github.com/username/repo/raw/main/lapa/duduk.jpg",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/duduk.jpg",
     },
     {
       name: "Spot Foto",
-      img: "https://github.com/username/repo/raw/main/lapa/nama.jpg",
+      img: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/lapa/nama.jpg",
     },
   ];
 
@@ -44,7 +66,7 @@ export default function LembahLaparajoPage() {
           className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
           style={{
             backgroundImage:
-              "url('https://github.com/username/repo/raw/main/wisata/lembah-laparajo.png')",
+              "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/lembah-laparajo.png')",
           }}
         >
           <div className="bg-opacity-50 px-6 py-4 rounded-lg">
