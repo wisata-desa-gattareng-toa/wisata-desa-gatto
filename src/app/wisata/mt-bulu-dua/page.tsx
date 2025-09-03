@@ -51,26 +51,26 @@ export default function BuluDuaPage() {
         {/* Hero */}
         <section
           id="hero"
-          className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
+          className="relative h-[300px] sm:h-[560px] bg-cover bg-center flex items-center justify-center"
           style={{
             backgroundImage:
-              "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/mt-massimpolongnge.png')",
+              "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/mt-bulu-dua.png')",
           }}
         >
-          <div className="bg-opacity-50 px-6 py-4 rounded-lg">
-            <h1 className="text-white text-3xl md:text-5xl font-bold text-center justify-center">
+          <div className="bg-opacity-50 px-3 sm:px-6 py-2 sm:py-4 rounded-lg">
+            <h1 className="pt-15 text-white text-2xl sm:text-4xl md:text-5xl font-bold text-center">
               MT BULU DUA
             </h1>
           </div>
         </section>
 
         {/* Deskripsi */}
-        <section className="bg-white max-w-full mx-auto py-12 sm:px-15 md:px-50">
-          <div className="text-center bg-[#4AC2AD1F] py-10 sm:px-10 md:px-25 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h2 className="text-3xl font-bold text-[#01AFEF] mb-4">
+        <section className="bg-white max-w-full mx-auto py-6 sm:py-10 px-6 sm:px-15 md:px-40">
+          <div className="text-center bg-[#4AC2AD1F] py-5 sm:py-8 px-4 sm:px-10 md:px-12 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#01AFEF] mb-3">
               DESKRIPSI
             </h2>
-            <p className="text-black leading-relaxed text-center">
+            <p className="text-xs sm:text-base md:text-lg text-black leading-relaxed text-justify sm:text-center">
               MT Bulu Dua adalah salah satu gunung yang ada di Desa Gattareng
               Toa, Kecamatan Marioriwawo, Kabupaten Soppeng tepatnya di
               Panrokoe. Gunung ini memiliki ketinggian 920 meter di atas
@@ -78,7 +78,7 @@ export default function BuluDuaPage() {
               Barru dan melalui Soppeng, dan untuk jalur Soppeng kita harus
               melalui 3 pos.
             </p>
-            <p className="pt-3 text-black leading-relaxed text-center">
+            <p className="pt-2 text-xs sm:text-base md:text-lg text-black leading-relaxed text-justify sm:text-center">
               Jalur pendakiannya beragam, mulai dari jalan setapak yang landai
               hingga tanjakan curam berbatu. Perjalanan menuju puncak melewati
               hamparan hutan, udara sejuk, dan suara alam yang menenangkan.
@@ -87,14 +87,14 @@ export default function BuluDuaPage() {
               pemandangan desa-desa di kejauhan yang membuat rasa lelah langsung
               terbayar lunas.
             </p>
-            <p className="pt-3 text-black leading-relaxed text-center">
+            <p className="pt-2 text-xs sm:text-base md:text-lg text-black leading-relaxed text-justify sm:text-center">
               Nama Bulu Dua berasal dari bahasa Bugis, di mana "bulu" berarti
               gunung atau bukit, dan "dua" berarti angka dua. Penamaan ini
               kemungkinan merujuk pada bentuk gunungnya yang memiliki dua puncak
               berdekatan, seakan menjadi sepasang penjaga alam Desa Gattareng
               Toa. Bentuknya yang khas membuatnya mudah dikenali dari kejauhan.
             </p>
-            <p className="pt-3 text-black leading-relaxed text-center">
+            <p className="pt-2 text-xs sm:text-base md:text-lg text-black leading-relaxed text-justify sm:text-center">
               Jalur melalui Soppeng ini dibuka secara resmi sejak tahun 2025
               setelah dilakukan pembukaan jalur oleh mahasiswa KKN Gel. 114
               Unhas bersama pemuda desa yaitu Bolang Bulu Dua, dengan pemasangan
@@ -107,26 +107,26 @@ export default function BuluDuaPage() {
         </section>
 
         {/* Lokasi & Peta Jalur */}
-        <section className="bg-[#F8F9FA] max-w-full mx-auto py-12 px-15 md:px-40 grid md:grid-cols-2 gap-8 items-start">
+        <section className="bg-[#F8F9FA] max-w-full mx-auto py-8 sm:py-12 px-6 sm:px-15 md:px-40 grid md:grid-cols-2 gap-6 sm:gap-8 items-start">
           {/* Lokasi */}
-          <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h2 className="text-3xl font-bold text-[#4AC2AD] mb-4 text-center">
+          <div className="p-4 sm:p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#4AC2AD] mb-4 text-center">
               LOKASI POS REGIST (BASECAMP)
             </h2>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7954.910871137934!2d119.78822679357911!3d-4.511626999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMzAnNDEuOSJTIDExOcKwNDcnNTEuOSJF!5e0!3m2!1sid!2sid!4v1755076986802!5m2!1sid!2sid"
               width="100%"
-              height="365"
+              height="250"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              className="rounded-lg"
+              className="rounded-lg sm:h-[365px]"
             ></iframe>
           </div>
 
           {/* Peta Jalur */}
-          <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
-            <h2 className="text-3xl font-bold text-[#4AC2AD] mb-4 text-center">
+          <div className="p-4 sm:p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#4AC2AD] mb-4 text-center">
               PETA JALUR
               <br />
               MT. BULU DUA
@@ -140,10 +140,10 @@ export default function BuluDuaPage() {
         </section>
 
         {/* Jadwal & Peraturan */}
-        <section className="bg-white max-w-full mx-auto py-12 px-15 md:px-40 grid md:grid-cols-2 gap-8 items-start">
+        <section className="bg-white max-w-full mx-auto py-8 sm:py-12 px-6 sm:px-15 md:px-40 grid md:grid-cols-2 gap-6 sm:gap-8 items-start">
           {/* Jadwal */}
-          <div className="p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
-            <h2 className="text-3xl font-bold text-[#01AFEF] mb-4 text-center">
+          <div className="p-4 sm:p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#01AFEF] mb-4 text-center">
               JADWAL DAN PERATURAN MENDAKI
             </h2>
             <img
@@ -154,18 +154,18 @@ export default function BuluDuaPage() {
           </div>
 
           {/* Lokasi Masuk */}
-          <div className="p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h2 className="text-3xl font-bold text-[#01AFEF] mb-4 text-center">
+          <div className="p-4 sm:p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#01AFEF] mb-4 text-center">
               LOKASI MASUK GUNUNG
             </h2>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7954.910871137934!2d119.78822679357911!3d-4.511626999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMzAnNDEuOSJTIDExOcKwNDcnNTEuOSJF!5e0!3m2!1sid!2sid!4v1755076986802!5m2!1sid!2sid"
               width="100%"
-              height="365"
+              height="250"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              className="rounded-lg"
+              className="rounded-lg sm:h-[365px]"
             ></iframe>
           </div>
         </section>
@@ -173,21 +173,20 @@ export default function BuluDuaPage() {
         {/* Galeri */}
         <section
           id="galeri"
-          className="max-w-full mx-auto py-12 px-4 bg-[#F8F9FA]"
+          className="max-w-full mx-auto py-8 sm:py-12 px-4 sm:px-8 md:px-20 bg-[#F8F9FA]"
         >
-          <h2 className="text-3xl font-bold text-[#4AC2AD] text-center mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#4AC2AD] text-center mb-6 sm:mb-8">
             GALERI FOTO MT BULU DUA
           </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:px-10 md:px-30">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
             {galeriFotos.map((foto, i) => (
               <Image
                 key={i}
                 src={foto.src}
                 width={400}
                 height={300}
-                className="w-full h-70 object-cover rounded"
-                alt=""
+                className="w-full h-36 sm:h-72 object-cover rounded"
+                alt={`Galeri Bulu Dua ${i + 1}`}
               />
             ))}
           </div>

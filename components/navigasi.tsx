@@ -2,10 +2,11 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { FaBars, FaTimes } from "react-icons/fa"; // untuk icon menu
 
 export default function Navigasi() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isWisataOpen, setIsWisataOpen] = useState(false); // untuk mobile dropdown
+  const [isWisataOpen, setIsWisataOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const pathname = usePathname();
 
@@ -33,12 +34,16 @@ export default function Navigasi() {
 
   return (
     <nav className="bg-white shadow-md fixed w-full z-50">
-      <div className="max-w-7xl mx-auto sm:px-6">
-        <div className="flex justify-between h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center">
             <Link href="/">
-              <img src={logoLFS} alt="Logo" className="h-15 cursor-pointer" />
+              <img
+                src={logoLFS}
+                alt="Logo"
+                className="h-11 w-auto cursor-pointer"
+              />
             </Link>
           </div>
 
@@ -104,9 +109,9 @@ export default function Navigasi() {
           <div className="md:hidden flex items-center text-black">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="focus:outline-none"
+              className="focus:outline-none text-2xl"
             >
-              ☰
+              {isMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
         </div>
@@ -114,12 +119,13 @@ export default function Navigasi() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="md:hidden bg-white shadow-lg border-t">
           <Link
             href="/"
             className={`block px-4 py-2 ${
               pathname === "/" ? "text-[#01AFEF]" : "text-black"
             }`}
+            onClick={() => setIsMenuOpen(false)}
           >
             Beranda
           </Link>
@@ -130,6 +136,7 @@ export default function Navigasi() {
                 ? "text-[#01AFEF]"
                 : "text-black"
             }`}
+            onClick={() => setIsMenuOpen(false)}
           >
             Peta Lokasi Wisata
           </Link>
@@ -148,12 +155,14 @@ export default function Navigasi() {
               <Link
                 href="/wisata/#wisata-alam"
                 className="block px-4 py-2 hover:bg-gray-100"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Wisata Alam
               </Link>
               <Link
                 href="/wisata/#wisata-kuliner"
                 className="block px-4 py-2 hover:bg-gray-100"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Wisata Kuliner
               </Link>
@@ -165,6 +174,7 @@ export default function Navigasi() {
             className={`block px-4 py-2 ${
               pathname === "/galeri" ? "text-[#01AFEF]" : "text-black"
             }`}
+            onClick={() => setIsMenuOpen(false)}
           >
             Galeri Wisata
           </Link>

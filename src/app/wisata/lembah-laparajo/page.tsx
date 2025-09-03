@@ -4,7 +4,6 @@ import Navigasi from "../../../../components/navigasi";
 import Footer from "../../../../components/footer";
 
 export default function LembahLaparajoPage() {
-  // Semua link gambar besar pakai GitHub LFS / media.githubusercontent.com
   const galeriFotos = [
     {
       src: "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/lembah-laparajo.jpg",
@@ -63,27 +62,27 @@ export default function LembahLaparajoPage() {
         {/* Hero */}
         <section
           id="hero"
-          className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
+          className="relative h-[300px] sm:h-[560px] bg-cover bg-center flex items-center justify-center"
           style={{
             backgroundImage:
               "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/lembah-laparajo.png')",
           }}
         >
-          <div className="bg-opacity-50 px-6 py-4 rounded-lg">
-            <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+          <div className="bg-opacity-50 px-3 sm:px-6 py-2 sm:py-4 rounded-lg">
+            <h1 className="text-white text-2xl sm:text-4xl md:text-5xl font-bold text-center pt-15">
               LEMBAH LAPARAJO
             </h1>
           </div>
         </section>
 
         {/* Deskripsi */}
-        <section className="bg-white max-w-full mx-auto py-12 sm:px-15 md:px-50">
-          <div className="text-center bg-[#4AC2AD1F] py-10 sm:px-10 md:px-25 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h2 className="text-3xl font-bold text-[#01AFEF] mb-4">
+        <section className="bg-white max-w-full mx-auto py-6 sm:py-10 px-8 sm:px-15 md:px-60">
+          <div className="text-center bg-[#4AC2AD1F] py-5 sm:py-8 px-5 sm:px-10 md:px-12 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+            <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-[#01AFEF] mb-3">
               DESKRIPSI
             </h2>
-            <p className="text-black leading-relaxed text-center">
-              Lembah laparajo adalah salah satu destinasi wisata yang ada di
+            <p className="text-xs sm:text-base md:text-lg text-black leading-relaxed text-justify sm:text-center">
+              Lembah Laparajo adalah salah satu destinasi wisata yang ada di
               desa Gattareng Toa, kec. Marioriwawo, kabupaten Soppeng. Lembah
               Laparajo ini tepatnya berada di perbatasan antara Soppeng dan
               Barru. Lembah ini dekat dengan kaki gunung MT. Massimpolongnge.
@@ -94,7 +93,7 @@ export default function LembahLaparajoPage() {
               destinasi wisata, sekaligus menambah daya tarik bagi para
               pengunjung.
             </p>
-            <p className="pt-3 text-black leading-relaxed text-center">
+            <p className="pt-2 text-xs sm:text-base md:text-lg text-black leading-relaxed text-justify sm:text-center">
               Lembah Laparajo dikelilingi oleh bukit hijau dan pepohonan yang
               rimbun, lembah ini menawarkan pemandangan alam yang menenangkan
               serta udara yang sejuk dan segar. Di Lembah Laparajo, pengunjung
@@ -104,7 +103,7 @@ export default function LembahLaparajoPage() {
               menambah pesona alami tempat ini, serta menjadi spot favorit untuk
               beristirahat sambil menikmati suasana alam.
             </p>
-            <p className="pt-3 text-black leading-relaxed text-center">
+            <p className="pt-2 text-xs sm:text-base md:text-lg text-black leading-relaxed text-justify sm:text-center">
               Keindahan Lembah Laparajo juga semakin menarik saat matahari
               terbit atau terbenam, ketika cahaya keemasan menyinari lembah dan
               menciptakan panorama yang memukau. Tempat ini cocok dikunjungi
@@ -115,40 +114,44 @@ export default function LembahLaparajoPage() {
         </section>
 
         {/* Lokasi */}
-        <section className="bg-[#F8F9FA] max-w-full mx-auto py-12 px-15 md:px-90">
-          <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
-            <h2 className="text-3xl font-bold text-[#4AC2AD] mb-4">LOKASI</h2>
+        <section className="bg-[#F8F9FA] max-w-full mx-auto py-8 sm:py-12 px-8 sm:px-15 md:px-20">
+          <div className="bg-white p-4 sm:p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#4AC2AD] mb-4">
+              LOKASI
+            </h2>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d994.3630047859344!2d119.78940126956354!3d-4.512250662768021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMzAnNDQuMSJTIDExOcKwNDcnMjQuMiJF!5e0!3m2!1sid!2sid!4v1755170163419!5m2!1sid!2sid"
               width="100%"
-              height="425"
+              height="250"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              className="rounded-lg"
+              className="rounded-lg sm:h-[425px]"
             ></iframe>
           </div>
         </section>
 
         {/* Fasilitas */}
-        <section className="max-w-full mx-auto py-12 px-4 md:px-30 bg-white">
-          <h2 className="text-3xl font-bold text-[#4AC2AD] text-center mb-8">
+        <section className="max-w-full mx-auto py-8 sm:py-12 px-5 sm:px-8 md:px-20 bg-white">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#4AC2AD] text-center mb-6 sm:mb-8">
             FASILITAS
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-10 text-black sm:px-10 md:px-30">
+          <div className="grid grid-cols-2 gap-6 sm:gap-10 text-black">
             {fasilitas.map((item, i) => (
               <div
                 key={i}
-                className=" bg-[#F8F9FA] rounded-lg shadow hover:shadow-lg overflow-hidden text-center"
+                className="bg-[#F8F9FA] rounded-lg shadow hover:shadow-lg overflow-hidden text-center"
               >
                 <Image
                   src={item.img}
                   alt={item.name}
                   width={300}
                   height={200}
-                  className="w-full h-65 object-cover"
+                  className="w-full h-40 sm:h-65 object-cover"
                 />
-                <p className="font-semibold py-3">{item.name}</p>
+                <p className="font-semibold py-3 text-sm sm:text-base">
+                  {item.name}
+                </p>
               </div>
             ))}
           </div>
@@ -157,20 +160,20 @@ export default function LembahLaparajoPage() {
         {/* Galeri */}
         <section
           id="galeri"
-          className="max-w-full mx-auto py-12 px-4 bg-[#F8F9FA]"
+          className="max-w-full mx-auto py-8 sm:py-12 px-4 sm:px-8 md:px-20 bg-[#F8F9FA]"
         >
-          <h2 className="text-3xl font-bold text-[#4AC2AD] text-center mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#4AC2AD] text-center mb-6 sm:mb-8">
             GALERI FOTO LEMBAH LAPARAJO
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:px-10 md:px-30">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
             {galeriFotos.map((foto, i) => (
               <Image
                 key={i}
                 src={foto.src}
                 width={400}
                 height={300}
-                className="w-full h-70 object-cover rounded"
+                className="w-full h-36 sm:h-70 object-cover rounded"
                 alt=""
               />
             ))}

@@ -42,68 +42,65 @@ export default function MassimpolongngePage() {
         {/* Hero */}
         <section
           id="hero"
-          className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
+          className="relative h-[300px] sm:h-[560px] bg-cover bg-center flex items-center justify-center"
           style={{
             backgroundImage:
               "url('https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/refs/heads/main/public/wisata/mt-massimpolongnge.png')",
           }}
         >
-          <div className="bg-opacity-50 px-6 py-4 rounded-lg">
-            <h1 className="text-white text-3xl md:text-5xl font-bold text-center justify-center">
+          <div className="bg-opacity-50 px-3 sm:px-6 py-2 sm:py-4 rounded-lg">
+            <h1 className="pt-15 text-white text-2xl sm:text-4xl md:text-5xl font-bold text-center">
               MT MASSIMPOLONGNGE
             </h1>
           </div>
         </section>
 
         {/* Deskripsi */}
-        <section className="bg-white max-w-full mx-auto py-12 sm:px-15 md:px-80">
-          <div className="text-center bg-[#4AC2AD1F] py-10 sm:px-10 md:px-25 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h2 className="text-3xl font-bold text-[#01AFEF] mb-4">
+        <section className="bg-white max-w-full mx-auto py-8 sm:py-12 px-6 sm:px-15 md:px-40">
+          <div className="text-center bg-[#4AC2AD1F] py-6 sm:py-10 px-4 sm:px-10 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#01AFEF] mb-3">
               DESKRIPSI
             </h2>
-            <p className="text-black leading-relaxed text-center">
+            <p className="text-xs sm:text-base md:text-lg text-black leading-relaxed text-justify sm:text-center mb-3">
               Gunung Massimpolongnge yang berada di kawasan Buludua, Desa
               Gattareng Toa, Kecamatan Marioriwawo, Kabupaten Soppeng adalah
               destinasi alam yang bikin kamu terpukau sejak awal pendakian.
               Terletak di ketinggian sekitar 1.254 meter di atas permukaan laut
               (mdpl), gunung ini menawarkan jalur yang menantang, di mana kita
               akan melewati hutan dan tanjakan berbatu, namun setiap langkah
-              memberi sensasi petualangan sejati. Sampai di puncak, kamu
-              disuguhi pemandangan luar biasa: kabut tebal yang menyelimuti
-              lembah, langit biru, dan suasana pegunungan yang sunyi, bikin lega
-              dan takjub sekaligus.
+              memberi sensasi petualangan sejati.
             </p>
-            <p className="pt-3 text-black leading-relaxed text-center">
-              Jalur gunung ini sudah menjadi wisata sejak lama, kemudian sejak
-              2024, lokasi ini makin teratur berkat mahasiswa KKN Unhas dan
-              pemuda desa—yang dikenal dengan Bolang Bulu Dua—yang memasang
-              penanda jalur serta tugu puncak. Sekarang pendaki bisa sampai
-              dengan lebih mudah dan aman. Massimpolongnge kini bukan hanya soal
-              tantangan, tapi juga pengalaman penuh makna dan pesona alam yang
-              sulit dilupakan.
+            <p className="text-xs sm:text-base md:text-lg text-black leading-relaxed text-justify sm:text-center">
+              Sampai di puncak, kamu disuguhi pemandangan luar biasa: kabut
+              tebal yang menyelimuti lembah, langit biru, dan suasana pegunungan
+              yang sunyi, bikin lega dan takjub sekaligus. Jalur gunung ini
+              makin teratur sejak 2024 berkat mahasiswa KKN Gel. 112 Unhas dan
+              pemuda desa Bolang Bulu Dua yang memasang penanda jalur serta tugu
+              puncak. Kini Massimpolongnge bukan hanya soal tantangan, tapi juga
+              pengalaman penuh makna dan pesona alam yang sulit dilupakan.
             </p>
           </div>
         </section>
 
         {/* Lokasi & Peta Jalur */}
-        <section className="bg-[#F8F9FA] max-w-full mx-auto py-12 px-15 md:px-40 grid md:grid-cols-2 gap-8 items-start">
-          <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h2 className="text-3xl font-bold text-[#4AC2AD] mb-4 text-center">
+        <section className="bg-[#F8F9FA] max-w-full mx-auto py-8 sm:py-12 px-6 sm:px-15 md:px-40 grid md:grid-cols-2 gap-8 items-start">
+          <div className="p-4 sm:p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#4AC2AD] mb-4 text-center">
               LOKASI POS REGIST (BASECAMP)
             </h2>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7954.910871137934!2d119.78822679357911!3d-4.511626999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMzAnNDEuOSJTIDExOcKwNDcnNTEuOSJF!5e0!3m2!1sid!2sid!4v1755076986802!5m2!1sid!2sid"
               width="100%"
-              height="365"
+              height="250"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              className="rounded-lg"
+              className="rounded-lg sm:h-[365px]"
             ></iframe>
           </div>
 
-          <div className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
-            <h2 className="text-3xl font-bold text-[#4AC2AD] mb-4 text-center">
+          <div className="p-4 sm:p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#4AC2AD] mb-4 text-center">
               PETA JALUR MT. MASSIMPOLONGNGE
             </h2>
             <img
@@ -115,9 +112,9 @@ export default function MassimpolongngePage() {
         </section>
 
         {/* Jadwal & Peraturan */}
-        <section className="bg-white max-w-full mx-auto py-12 px-15 md:px-40 grid md:grid-cols-2 gap-8 items-start">
-          <div className="p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
-            <h2 className="text-3xl font-bold text-[#01AFEF] mb-4 text-center">
+        <section className="bg-white max-w-full mx-auto py-8 sm:py-12 px-6 sm:px-15 md:px-40 grid md:grid-cols-2 gap-8 items-start">
+          <div className="p-4 sm:p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#01AFEF] mb-4 text-center">
               JADWAL DAN PERATURAN MENDAKI
             </h2>
             <img
@@ -127,18 +124,18 @@ export default function MassimpolongngePage() {
             />
           </div>
 
-          <div className="p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h2 className="text-3xl font-bold text-[#01AFEF] mb-4 text-center">
+          <div className="p-4 sm:p-6 bg-[#F8F9FA] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#01AFEF] mb-4 text-center">
               LOKASI MASUK GUNUNG
             </h2>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7954.910871137934!2d119.78822679357911!3d-4.511626999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMzAnNDEuOSJTIDExOcKwNDcnNTEuOSJF!5e0!3m2!1sid!2sid!4v1755076986802!5m2!1sid!2sid"
               width="100%"
-              height="365"
+              height="250"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              className="rounded-lg"
+              className="rounded-lg sm:h-[365px]"
             ></iframe>
           </div>
         </section>
@@ -146,20 +143,19 @@ export default function MassimpolongngePage() {
         {/* Galeri */}
         <section
           id="galeri"
-          className="max-w-full mx-auto py-12 px-4 bg-[#F8F9FA]"
+          className="max-w-full mx-auto py-8 sm:py-12 px-4 sm:px-8 md:px-20 bg-[#F8F9FA]"
         >
-          <h2 className="text-3xl font-bold text-[#4AC2AD] text-center mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#4AC2AD] text-center mb-6 sm:mb-8">
             GALERI FOTO MT MASSIMPOLONGNGE
           </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:px-10 md:px-30">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
             {galeriFotos.map((foto, i) => (
               <Image
                 key={i}
                 src={foto.src}
                 width={400}
                 height={300}
-                className="w-full h-70 object-cover rounded"
+                className="w-full h-36 sm:h-70 object-cover rounded"
                 alt={`Galeri Massimpolongnge ${i + 1}`}
               />
             ))}

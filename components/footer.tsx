@@ -3,20 +3,14 @@ export default function Footer() {
     "https://media.githubusercontent.com/media/wisata-desa-gattareng-toa/wisata-desa-gatto/main/public/icons";
 
   return (
-    <footer className="bg-sky-500 text-white text-center py-6">
-      <div className="flex justify-center space-x-4 mb-4">
+    <footer className="bg-sky-500 text-white text-center py-6 px-4 sm:px-6">
+      {/* Ikon Sosial */}
+      <div className="flex justify-center space-x-6 mb-4">
         <a href="#" aria-label="YouTube">
           <img
             src={`${lfsBase}/Youtube.png`}
-            className="h-6 w-6"
+            className="h-8 w-8 sm:h-6 sm:w-6"
             alt="YouTube"
-          />
-        </a>
-        <a href="#" aria-label="Facebook">
-          <img
-            src={`${lfsBase}/facebook.png`}
-            className="h-6 w-6"
-            alt="Facebook"
           />
         </a>
         <a
@@ -24,8 +18,8 @@ export default function Footer() {
           aria-label="Instagram"
         >
           <img
-            src={`${lfsBase}/instagram.png`}
-            className="h-6 w-6"
+            src={`${lfsBase}/Instagram.png`}
+            className="h-8 w-8 sm:h-6 sm:w-6"
             alt="Instagram"
           />
         </a>
@@ -33,12 +27,18 @@ export default function Footer() {
           href="https://www.tiktok.com/@kknt_desagattarentoa114"
           aria-label="TikTok"
         >
-          <img src={`${lfsBase}/tiktok.png`} className="h-6 w-6" alt="TikTok" />
+          <img
+            src={`${lfsBase}/tiktok.png`}
+            className="h-8 w-8 sm:h-6 sm:w-6"
+            alt="TikTok"
+          />
         </a>
       </div>
-      <p className="text-sm">
-        © Copyright 2025 KKNT Pemberdayaan Masyarakat Desa Gattareng Toa Gel.
-        114 Universitas Hasanuddin
+
+      {/* Teks Copyright */}
+      <p className="text-xs sm:text-sm leading-relaxed">
+        © 2025 KKNT Pemberdayaan Masyarakat Desa Gattareng Toa Gel. 114
+        Universitas Hasanuddin
       </p>
     </footer>
   );

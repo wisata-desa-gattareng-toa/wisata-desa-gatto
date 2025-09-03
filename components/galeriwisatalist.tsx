@@ -65,11 +65,11 @@ export default function GaleriWisataList() {
       {/* HERO */}
       <section
         id="hero"
-        className="relative h-[560px] bg-cover bg-center flex items-center justify-center"
+        className="relative min-h-[calc(70vh-64px)] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${baseURL}/hero.png)` }}
       >
-        <div className="bg-opacity-50 px-6 py-4 rounded-lg">
-          <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+        <div className="bg-opacity-50 px-4 sm:px-6 py-4 rounded-lg">
+          <h1 className="text-white text-2xl sm:text-4xl md:text-5xl font-bold text-center leading-snug pt-14">
             GALERI WISATA DESA
             <br />
             GATTARENG TOA
@@ -78,20 +78,25 @@ export default function GaleriWisataList() {
       </section>
 
       {/* WISATA ALAM */}
-      <section id="wisata-alam" className="bg-gray-100 py-30 xl:px-40 sm:px-20">
-        <h2 className="text-center text-3xl font-bold text-[#00BFFF] mb-8">
+      <section
+        id="wisata-alam"
+        className="bg-gray-100 pt-10 pb-1 px-4 sm:px-10 md:px-20 xl:px-40 scroll-mt-15"
+      >
+        <h2 className="text-center text-2xl sm:text-3xl font-bold text-[#00BFFF] mb-8">
           WISATA ALAM
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-10 mb-8">
           {wisataAlam.map((item) => (
             <Link key={item.id} href={`/wisata/${item.id}/#galeri`}>
               <div className="text-black bg-white rounded-xl shadow-md overflow-hidden cursor-pointer hover:shadow-lg transition-shadow">
                 <img
                   src={item.gambar}
                   alt={item.nama}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-32 sm:h-40 md:h-48 object-cover"
                 />
-                <div className="p-3 text-center font-bold">{item.nama}</div>
+                <div className="p-2 sm:p-3 text-center font-bold text-xs sm:text-sm md:text-base">
+                  {item.nama}
+                </div>
               </div>
             </Link>
           ))}
@@ -99,20 +104,25 @@ export default function GaleriWisataList() {
       </section>
 
       {/* WISATA KULINER */}
-      <section id="wisata-kuliner" className="bg-white py-40 xl:px-80 sm:px-20">
-        <h2 className="text-center text-3xl font-bold text-[#40E0D0] mb-8">
+      <section
+        id="wisata-kuliner"
+        className="bg-white py-16 px-4 sm:px-10 md:px-20 xl:px-80"
+      >
+        <h2 className="text-center text-2xl sm:text-3xl font-bold text-[#40E0D0] mb-8">
           WISATA KULINER
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6">
           {wisataKuliner.map((item) => (
-            <Link key={item.id} href={`/wisata/${item.id}`}>
+            <Link key={item.id} href={`/wisata/${item.id}/#galeri`}>
               <div className="text-black bg-gray-100 rounded-xl shadow-md overflow-hidden cursor-pointer hover:shadow-lg transition-shadow">
                 <img
                   src={item.gambar}
                   alt={item.nama}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-32 sm:h-40 md:h-48 object-cover"
                 />
-                <div className="p-3 text-center font-semibold">{item.nama}</div>
+                <div className="p-2 sm:p-3 text-center font-semibold text-xs sm:text-sm md:text-base">
+                  {item.nama}
+                </div>
               </div>
             </Link>
           ))}
